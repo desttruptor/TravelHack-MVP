@@ -15,12 +15,14 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // for network
+        buildConfigField "String", "IZITRAVEL_BASE_URL", "\"https://api.izi.travel/\""
+        buildConfigField "String", "IZITRAVEL_API_KEY", "\"7c6c2db9-d237-4411-aa0e-f89125312494\""
     }
 
     buildTypes {
         release {
-            buildConfigField "String", "IZITRAVEL_API_KEY", "\"7c6c2db9-d237-4411-aa0e-f89125312494\""
-
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -46,4 +48,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     // Retrofit 2
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+    // Exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.13.2'
 }
