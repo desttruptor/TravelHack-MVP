@@ -23,5 +23,8 @@ data class PlaceDataItem(
 	val uuid: String? = null,
 
 	@field:SerializedName("content")
-	val content: List<ContentItem>? = null
+	val content: List<ContentItem>? = null,
+
+	@field:SerializedName("map")
+	val map: Map? = null
 )
