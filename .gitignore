@@ -20,6 +20,7 @@ out/
 # Gradle files
 .gradle/
 gradle/
+gradle/*
 build/
 
 # Local configuration file (sdk path, etc)
@@ -85,3 +86,4 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 .idea/*
+.idea
