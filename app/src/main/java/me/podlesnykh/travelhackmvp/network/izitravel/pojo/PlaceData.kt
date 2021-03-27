@@ -2,12 +2,6 @@ package me.podlesnykh.travelhackmvp.network.izitravel.pojo
 
 import com.google.gson.annotations.SerializedName
 
-data class PlaceData(
-
-	@field:SerializedName("PlaceData")
-	val placeData: List<PlaceDataItem>? = null
-)
-
 data class PlaceDataItem(
 
 	@field:SerializedName("trigger_zones")

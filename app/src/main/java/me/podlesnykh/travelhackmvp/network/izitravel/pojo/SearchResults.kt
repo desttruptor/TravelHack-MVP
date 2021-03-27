@@ -2,12 +2,6 @@ package me.podlesnykh.travelhackmvp.network.izitravel.pojo
 
 import com.google.gson.annotations.SerializedName
 
-data class SearchResults(
-
-	@field:SerializedName("Response")
-	val response: List<ResponseItem>? = null
-)
-
 data class Location(
 
 	@field:SerializedName("latitude")

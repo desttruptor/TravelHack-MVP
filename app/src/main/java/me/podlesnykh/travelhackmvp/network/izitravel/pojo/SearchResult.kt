@@ -2,12 +2,6 @@ package me.podlesnykh.travelhackmvp.network.izitravel.pojo
 
 import com.google.gson.annotations.SerializedName
 
-data class SearchResult(
-
-	@field:SerializedName("SearchResultItem")
-	val searchResultItem: List<SearchResultItem>? = null
-)
-
 data class Reviews(
 
 	@field:SerializedName("rating_average")
